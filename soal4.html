@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pertambahan</title>
+    <script>
+      function hitung() {
+        let x = Number(document.getElementById("bil1").value);
+        let y = Number(document.getElementById("bil2").value);
+        let z = x + y;
+        document.getElementById("bil3").value = z;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Masukkan sebuah bilangan yang ingin dijumlah:</p>
+    <br />
+    <form id="frm1">
+      <input type="text" id="bil1" /><br />
+      <b>+<br /></b><input type="text" id="bil2" onchange="hitung()" /><br />
+      <b>=<br /></b><input type="text" id="bil3" />
+    </form>
+  </body>
+</html>

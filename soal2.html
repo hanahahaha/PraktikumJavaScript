@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Kurs Rupiah</title>
+    <script>
+      function hitung() {
+        const PHI = "14.650";
+        let dollar = document.getElementById("bil1").value;
+        console.log("dollar : " + dollar);
+        let rupiah = PHI * dollar;
+        console.log("rupiah : " + rupiah);
+        let area_hasil = document.getElementById("hasil");
+        area_hasil.innerHTML = rupiah;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Menghitung Kurs Rupiah</h2>
+    Masukkan Dollar :
+    <input type="number" value="" size="10" id="bil1" />
+    <br />
+    <button onclick="hitung()">Hitung</button>
+    <br />Hasil : <span id="hasil"></span>
+  </body>
+</html>
